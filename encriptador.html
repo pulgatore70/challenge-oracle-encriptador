@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="esp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="encriptador.css">
+
+    </head>
+    <body>
+        <header class="contenedor">
+            <h1 class="imagen"><img src="imagenes/Logo.png"></h1>
+            <h2 class="descripcion">Programa para Encriptar y Desencriptar</h2>     
+        </header>
+        <main>
+            <section class="seccion1">
+                <textarea id="cajaTexto" type="text" col="40" rows="6" class="input-text" placeholder="Ingrese el texto aqui"></textarea>
+             
+                <h6 class="h6">Solo letras minúsculas y sin acentos</h6>
+                <div class="botonesEncrDesencr">
+                    <button class="btnEncriptar" type="button" onclick="btnencriptar()">Encriptar</button>
+                    <h4 class="texto-h4">Clic en Actualizar para volver a Encriptar/Desencriptar</h4>
+                    <button class="ActualizarPagina" type="button" onclick="actualizarPagina()">Actualizar</button>
+                    <button class="btnDesencriptar" type="button" onclick="btndesencriptar()">Desencriptar</button>
+                </div>               
+            </section>
+  
+            <section class="seccion2"> 
+                          
+                <div class="imagenMunheco">
+                    <img id="imagen" src="imagenes/alanturin.png">
+                </div>
+                <div class="contenedor-h3">
+                    <h3>Ningún mensaje fue encontrado</h3>
+                </div>
+                <div class="contenedor-parrafo">
+                    <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                </div>  
+                
+                     
+                <textarea id="mensajeEncriptado" type="text" cols="18" rows="8" class="input-text-area"></textarea>
+                <div class="botonCopiar">
+                    <button class="btnCopiar" type="button" onclick="btncopiar()">Copiar</button>
+                </div>
+                
+            </section>
+              
+
+        </main>
+    </body>
+    <script src="script.js"></script>
+    <footer><h2 class="piePagina">Oscar Eduardo Vivero Barrios <a href=https://www.linkedin.com/in/oscar-vivero-27a11450>in</a></h2></footer>
+</html>
